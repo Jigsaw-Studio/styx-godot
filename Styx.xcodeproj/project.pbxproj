@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5239B3A42C888E790052A684 /* StyxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3A32C888E790052A684 /* StyxApp.swift */; };
+		5239B3A62C888E790052A684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3A52C888E790052A684 /* ContentView.swift */; };
+		5239B3A82C888E7A0052A684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5239B3A72C888E7A0052A684 /* Assets.xcassets */; };
+		5239B3AC2C888E7A0052A684 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5239B3AB2C888E7A0052A684 /* Preview Assets.xcassets */; };
+		5239B3B62C888E7A0052A684 /* StyxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3B52C888E7A0052A684 /* StyxTests.swift */; };
+		5239B3C02C888E7A0052A684 /* StyxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3BF2C888E7A0052A684 /* StyxUITests.swift */; };
+		5239B3C22C888E7A0052A684 /* StyxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3C12C888E7A0052A684 /* StyxUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5239B3B22C888E7A0052A684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5239B3982C888E790052A684 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5239B39F2C888E790052A684;
+			remoteInfo = Styx;
+		};
+		5239B3BC2C888E7A0052A684 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5239B3982C888E790052A684 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5239B39F2C888E790052A684;
+			remoteInfo = Styx;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5239B3A02C888E790052A684 /* Styx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Styx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5239B3A32C888E790052A684 /* StyxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxApp.swift; sourceTree = "<group>"; };
+		5239B3A52C888E790052A684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5239B3A72C888E7A0052A684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5239B3A92C888E7A0052A684 /* Styx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Styx.entitlements; sourceTree = "<group>"; };
+		5239B3AB2C888E7A0052A684 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5239B3B12C888E7A0052A684 /* StyxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5239B3B52C888E7A0052A684 /* StyxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxTests.swift; sourceTree = "<group>"; };
+		5239B3BB2C888E7A0052A684 /* StyxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5239B3BF2C888E7A0052A684 /* StyxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxUITests.swift; sourceTree = "<group>"; };
+		5239B3C12C888E7A0052A684 /* StyxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5239B39D2C888E790052A684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5239B3AE2C888E7A0052A684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5239B3B82C888E7A0052A684 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5239B3972C888E790052A684 = {
+			isa = PBXGroup;
+			children = (
+				5239B3A22C888E790052A684 /* Styx */,
+				5239B3B42C888E7A0052A684 /* StyxTests */,
+				5239B3BE2C888E7A0052A684 /* StyxUITests */,
+				5239B3A12C888E790052A684 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5239B3A12C888E790052A684 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5239B3A02C888E790052A684 /* Styx.app */,
+				5239B3B12C888E7A0052A684 /* StyxTests.xctest */,
+				5239B3BB2C888E7A0052A684 /* StyxUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5239B3A22C888E790052A684 /* Styx */ = {
+			isa = PBXGroup;
+			children = (
+				5239B3A32C888E790052A684 /* StyxApp.swift */,
+				5239B3A52C888E790052A684 /* ContentView.swift */,
+				5239B3A72C888E7A0052A684 /* Assets.xcassets */,
+				5239B3A92C888E7A0052A684 /* Styx.entitlements */,
+				5239B3AA2C888E7A0052A684 /* Preview Content */,
+			);
+			path = Styx;
+			sourceTree = "<group>";
+		};
+		5239B3AA2C888E7A0052A684 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5239B3AB2C888E7A0052A684 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5239B3B42C888E7A0052A684 /* StyxTests */ = {
+			isa = PBXGroup;
+			children = (
+				5239B3B52C888E7A0052A684 /* StyxTests.swift */,
+			);
+			path = StyxTests;
+			sourceTree = "<group>";
+		};
+		5239B3BE2C888E7A0052A684 /* StyxUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5239B3BF2C888E7A0052A684 /* StyxUITests.swift */,
+				5239B3C12C888E7A0052A684 /* StyxUITestsLaunchTests.swift */,
+			);
+			path = StyxUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5239B39F2C888E790052A684 /* Styx */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5239B3C52C888E7A0052A684 /* Build configuration list for PBXNativeTarget "Styx" */;
+			buildPhases = (
+				5239B39C2C888E790052A684 /* Sources */,
+				5239B39D2C888E790052A684 /* Frameworks */,
+				5239B39E2C888E790052A684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Styx;
+			productName = Styx;
+			productReference = 5239B3A02C888E790052A684 /* Styx.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5239B3B02C888E7A0052A684 /* StyxTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5239B3C82C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxTests" */;
+			buildPhases = (
+				5239B3AD2C888E7A0052A684 /* Sources */,
+				5239B3AE2C888E7A0052A684 /* Frameworks */,
+				5239B3AF2C888E7A0052A684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5239B3B32C888E7A0052A684 /* PBXTargetDependency */,
+			);
+			name = StyxTests;
+			productName = StyxTests;
+			productReference = 5239B3B12C888E7A0052A684 /* StyxTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5239B3BA2C888E7A0052A684 /* StyxUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5239B3CB2C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxUITests" */;
+			buildPhases = (
+				5239B3B72C888E7A0052A684 /* Sources */,
+				5239B3B82C888E7A0052A684 /* Frameworks */,
+				5239B3B92C888E7A0052A684 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5239B3BD2C888E7A0052A684 /* PBXTargetDependency */,
+			);
+			name = StyxUITests;
+			productName = StyxUITests;
+			productReference = 5239B3BB2C888E7A0052A684 /* StyxUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5239B3982C888E790052A684 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					5239B39F2C888E790052A684 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					5239B3B02C888E7A0052A684 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5239B39F2C888E790052A684;
+					};
+					5239B3BA2C888E7A0052A684 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 5239B39F2C888E790052A684;
+					};
+				};
+			};
+			buildConfigurationList = 5239B39B2C888E790052A684 /* Build configuration list for PBXProject "Styx" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5239B3972C888E790052A684;
+			productRefGroup = 5239B3A12C888E790052A684 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5239B39F2C888E790052A684 /* Styx */,
+				5239B3B02C888E7A0052A684 /* StyxTests */,
+				5239B3BA2C888E7A0052A684 /* StyxUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5239B39E2C888E790052A684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5239B3AC2C888E7A0052A684 /* Preview Assets.xcassets in Resources */,
+				5239B3A82C888E7A0052A684 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5239B3AF2C888E7A0052A684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5239B3B92C888E7A0052A684 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5239B39C2C888E790052A684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5239B3A62C888E790052A684 /* ContentView.swift in Sources */,
+				5239B3A42C888E790052A684 /* StyxApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5239B3AD2C888E7A0052A684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5239B3B62C888E7A0052A684 /* StyxTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5239B3B72C888E7A0052A684 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5239B3C22C888E7A0052A684 /* StyxUITestsLaunchTests.swift in Sources */,
+				5239B3C02C888E7A0052A684 /* StyxUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5239B3B32C888E7A0052A684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5239B39F2C888E790052A684 /* Styx */;
+			targetProxy = 5239B3B22C888E7A0052A684 /* PBXContainerItemProxy */;
+		};
+		5239B3BD2C888E7A0052A684 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5239B39F2C888E790052A684 /* Styx */;
+			targetProxy = 5239B3BC2C888E7A0052A684 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		5239B3C32C888E7A0052A684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5239B3C42C888E7A0052A684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		5239B3C62C888E7A0052A684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Styx/Styx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Styx/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.Styx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5239B3C72C888E7A0052A684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Styx/Styx.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Styx/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.Styx;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5239B3C92C888E7A0052A684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Styx.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Styx";
+			};
+			name = Debug;
+		};
+		5239B3CA2C888E7A0052A684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Styx.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Styx";
+			};
+			name = Release;
+		};
+		5239B3CC2C888E7A0052A684 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Styx;
+			};
+			name = Debug;
+		};
+		5239B3CD2C888E7A0052A684 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Styx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5239B39B2C888E790052A684 /* Build configuration list for PBXProject "Styx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5239B3C32C888E7A0052A684 /* Debug */,
+				5239B3C42C888E7A0052A684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5239B3C52C888E7A0052A684 /* Build configuration list for PBXNativeTarget "Styx" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5239B3C62C888E7A0052A684 /* Debug */,
+				5239B3C72C888E7A0052A684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5239B3C82C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5239B3C92C888E7A0052A684 /* Debug */,
+				5239B3CA2C888E7A0052A684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5239B3CB2C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5239B3CC2C888E7A0052A684 /* Debug */,
+				5239B3CD2C888E7A0052A684 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5239B3982C888E790052A684 /* Project object */;
+}

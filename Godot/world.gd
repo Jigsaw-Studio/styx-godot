@@ -15,7 +15,7 @@ func _ready():
             if !xr_interface.start_passthrough():
                 return false
         else:
-            var modes = xr_interface.get_supported_environment_blend_modes()
+            var modes: Array = xr_interface.get_supported_environment_blend_modes()
             if xr_interface.XR_ENV_BLEND_MODE_ALPHA_BLEND in modes:
                 xr_interface.set_environment_blend_mode(xr_interface.XR_ENV_BLEND_MODE_ALPHA_BLEND)
             else:
@@ -26,5 +26,5 @@ func _ready():
         print("OpenXR not initialized, please check if your headset is connected")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
     pass

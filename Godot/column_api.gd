@@ -26,7 +26,7 @@ func _ready():
     static_body.input_ray_pickable = true
 
 # Handle the input event (e.g., tap or click)
-func _input_event(viewport, event, shape_idx):
+func _input_event(_viewport, event, _shape_idx):
     if event is InputEventMouseButton and event.is_pressed():
         print("Column tapped: ", domain_name)
         display_domain_name()

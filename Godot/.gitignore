@@ -13,3 +13,12 @@ export_presets.cfg
 .mono/
 data_*/
 mono_crash.*.json
+
+# Ignore everything in Godot/addons/
+Godot/addons/*
+
+# Whitelist MIT-licensed addons
+!Godot/addons/godot_vision/
+!Godot/addons/godot_vision/**
+!Godot/addons/godot-jolt/
+!Godot/addons/godot-jolt/**

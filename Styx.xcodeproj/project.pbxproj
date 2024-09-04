@@ -8,6 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		520A8DC22C88932500BD52AE /* GodotVision in Frameworks */ = {isa = PBXBuildFile; productRef = 520A8DC12C88932500BD52AE /* GodotVision */; };
+		521E48202C88A4DB001ACFC5 /* auto_join_shareplay.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E48052C88A4DB001ACFC5 /* auto_join_shareplay.gd */; };
+		521E48212C88A4DB001ACFC5 /* godot_vision.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E48062C88A4DB001ACFC5 /* godot_vision.gd */; };
+		521E48222C88A4DB001ACFC5 /* GodotVision_autoload.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E48072C88A4DB001ACFC5 /* GodotVision_autoload.gd */; };
+		521E48232C88A4DB001ACFC5 /* GodotVision_autoload.tscn in Resources */ = {isa = PBXBuildFile; fileRef = 521E48082C88A4DB001ACFC5 /* GodotVision_autoload.tscn */; };
+		521E48242C88A4DB001ACFC5 /* plugin.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 521E48092C88A4DB001ACFC5 /* plugin.cfg */; };
+		521E48252C88A4DB001ACFC5 /* rk_audio_stream_player_3d.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E480A2C88A4DB001ACFC5 /* rk_audio_stream_player_3d.gd */; };
+		521E48262C88A4DB001ACFC5 /* SharePlay.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E480B2C88A4DB001ACFC5 /* SharePlay.gd */; };
+		521E48272C88A4DB001ACFC5 /* vision_volume_camera.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E480C2C88A4DB001ACFC5 /* vision_volume_camera.gd */; };
+		521E48282C88A4DB001ACFC5 /* VisionVolumeCamera.tscn in Resources */ = {isa = PBXBuildFile; fileRef = 521E480D2C88A4DB001ACFC5 /* VisionVolumeCamera.tscn */; };
+		521E48292C88A4DB001ACFC5 /* godot-jolt_visionos_simulator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521E480F2C88A4DB001ACFC5 /* godot-jolt_visionos_simulator.framework */; };
+		521E482A2C88A4DB001ACFC5 /* godot-jolt_visionos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521E48102C88A4DB001ACFC5 /* godot-jolt_visionos.framework */; };
+		521E482B2C88A4DB001ACFC5 /* test_camera_rotation.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E48142C88A4DB001ACFC5 /* test_camera_rotation.gd */; };
+		521E482C2C88A4DB001ACFC5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 521E48172C88A4DB001ACFC5 /* .gitignore */; };
+		521E482D2C88A4DB001ACFC5 /* column_api.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E48182C88A4DB001ACFC5 /* column_api.gd */; };
+		521E482E2C88A4DB001ACFC5 /* icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = 521E48192C88A4DB001ACFC5 /* icon.svg */; };
+		521E482F2C88A4DB001ACFC5 /* icon.svg.import in Resources */ = {isa = PBXBuildFile; fileRef = 521E481A2C88A4DB001ACFC5 /* icon.svg.import */; };
+		521E48302C88A4DB001ACFC5 /* project.godot in Resources */ = {isa = PBXBuildFile; fileRef = 521E481B2C88A4DB001ACFC5 /* project.godot */; };
+		521E48312C88A4DB001ACFC5 /* styx-relay.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E481C2C88A4DB001ACFC5 /* styx-relay.gd */; };
+		521E48322C88A4DB001ACFC5 /* StyxVisionScene.tscn in Resources */ = {isa = PBXBuildFile; fileRef = 521E481D2C88A4DB001ACFC5 /* StyxVisionScene.tscn */; };
+		521E48332C88A4DB001ACFC5 /* world.gd in Resources */ = {isa = PBXBuildFile; fileRef = 521E481E2C88A4DB001ACFC5 /* world.gd */; };
 		5239B3A42C888E790052A684 /* StyxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3A32C888E790052A684 /* StyxApp.swift */; };
 		5239B3A62C888E790052A684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3A52C888E790052A684 /* ContentView.swift */; };
 		5239B3A82C888E7A0052A684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5239B3A72C888E7A0052A684 /* Assets.xcassets */; };
@@ -35,6 +55,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		521E48052C88A4DB001ACFC5 /* auto_join_shareplay.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = auto_join_shareplay.gd; sourceTree = "<group>"; };
+		521E48062C88A4DB001ACFC5 /* godot_vision.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = godot_vision.gd; sourceTree = "<group>"; };
+		521E48072C88A4DB001ACFC5 /* GodotVision_autoload.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GodotVision_autoload.gd; sourceTree = "<group>"; };
+		521E48082C88A4DB001ACFC5 /* GodotVision_autoload.tscn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GodotVision_autoload.tscn; sourceTree = "<group>"; };
+		521E48092C88A4DB001ACFC5 /* plugin.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin.cfg; sourceTree = "<group>"; };
+		521E480A2C88A4DB001ACFC5 /* rk_audio_stream_player_3d.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rk_audio_stream_player_3d.gd; sourceTree = "<group>"; };
+		521E480B2C88A4DB001ACFC5 /* SharePlay.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SharePlay.gd; sourceTree = "<group>"; };
+		521E480C2C88A4DB001ACFC5 /* vision_volume_camera.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vision_volume_camera.gd; sourceTree = "<group>"; };
+		521E480D2C88A4DB001ACFC5 /* VisionVolumeCamera.tscn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VisionVolumeCamera.tscn; sourceTree = "<group>"; };
+		521E480F2C88A4DB001ACFC5 /* godot-jolt_visionos_simulator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "godot-jolt_visionos_simulator.framework"; sourceTree = "<group>"; };
+		521E48102C88A4DB001ACFC5 /* godot-jolt_visionos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "godot-jolt_visionos.framework"; sourceTree = "<group>"; };
+		521E48142C88A4DB001ACFC5 /* test_camera_rotation.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_camera_rotation.gd; sourceTree = "<group>"; };
+		521E48172C88A4DB001ACFC5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		521E48182C88A4DB001ACFC5 /* column_api.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = column_api.gd; sourceTree = "<group>"; };
+		521E48192C88A4DB001ACFC5 /* icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.svg; sourceTree = "<group>"; };
+		521E481A2C88A4DB001ACFC5 /* icon.svg.import */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.svg.import; sourceTree = "<group>"; };
+		521E481B2C88A4DB001ACFC5 /* project.godot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = project.godot; sourceTree = "<group>"; };
+		521E481C2C88A4DB001ACFC5 /* styx-relay.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "styx-relay.gd"; sourceTree = "<group>"; };
+		521E481D2C88A4DB001ACFC5 /* StyxVisionScene.tscn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StyxVisionScene.tscn; sourceTree = "<group>"; };
+		521E481E2C88A4DB001ACFC5 /* world.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = world.gd; sourceTree = "<group>"; };
 		5239B3A02C888E790052A684 /* Styx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Styx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5239B3A32C888E790052A684 /* StyxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxApp.swift; sourceTree = "<group>"; };
 		5239B3A52C888E790052A684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +94,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521E48292C88A4DB001ACFC5 /* godot-jolt_visionos_simulator.framework in Frameworks */,
+				521E482A2C88A4DB001ACFC5 /* godot-jolt_visionos.framework in Frameworks */,
 				520A8DC22C88932500BD52AE /* GodotVision in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,9 +117,85 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		521E480E2C88A4DB001ACFC5 /* godot_vision */ = {
+			isa = PBXGroup;
+			children = (
+				521E48052C88A4DB001ACFC5 /* auto_join_shareplay.gd */,
+				521E48062C88A4DB001ACFC5 /* godot_vision.gd */,
+				521E48072C88A4DB001ACFC5 /* GodotVision_autoload.gd */,
+				521E48082C88A4DB001ACFC5 /* GodotVision_autoload.tscn */,
+				521E48092C88A4DB001ACFC5 /* plugin.cfg */,
+				521E480A2C88A4DB001ACFC5 /* rk_audio_stream_player_3d.gd */,
+				521E480B2C88A4DB001ACFC5 /* SharePlay.gd */,
+				521E480C2C88A4DB001ACFC5 /* vision_volume_camera.gd */,
+				521E480D2C88A4DB001ACFC5 /* VisionVolumeCamera.tscn */,
+			);
+			path = godot_vision;
+			sourceTree = "<group>";
+		};
+		521E48112C88A4DB001ACFC5 /* visionos */ = {
+			isa = PBXGroup;
+			children = (
+				521E480F2C88A4DB001ACFC5 /* godot-jolt_visionos_simulator.framework */,
+				521E48102C88A4DB001ACFC5 /* godot-jolt_visionos.framework */,
+			);
+			path = visionos;
+			sourceTree = "<group>";
+		};
+		521E48122C88A4DB001ACFC5 /* godot-jolt */ = {
+			isa = PBXGroup;
+			children = (
+				521E48112C88A4DB001ACFC5 /* visionos */,
+			);
+			path = "godot-jolt";
+			sourceTree = "<group>";
+		};
+		521E48132C88A4DB001ACFC5 /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				521E480E2C88A4DB001ACFC5 /* godot_vision */,
+				521E48122C88A4DB001ACFC5 /* godot-jolt */,
+			);
+			path = addons;
+			sourceTree = "<group>";
+		};
+		521E48152C88A4DB001ACFC5 /* camera_rotation */ = {
+			isa = PBXGroup;
+			children = (
+				521E48142C88A4DB001ACFC5 /* test_camera_rotation.gd */,
+			);
+			path = camera_rotation;
+			sourceTree = "<group>";
+		};
+		521E48162C88A4DB001ACFC5 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				521E48152C88A4DB001ACFC5 /* camera_rotation */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		521E481F2C88A4DB001ACFC5 /* Godot */ = {
+			isa = PBXGroup;
+			children = (
+				521E48132C88A4DB001ACFC5 /* addons */,
+				521E48162C88A4DB001ACFC5 /* tests */,
+				521E48172C88A4DB001ACFC5 /* .gitignore */,
+				521E48182C88A4DB001ACFC5 /* column_api.gd */,
+				521E48192C88A4DB001ACFC5 /* icon.svg */,
+				521E481A2C88A4DB001ACFC5 /* icon.svg.import */,
+				521E481B2C88A4DB001ACFC5 /* project.godot */,
+				521E481C2C88A4DB001ACFC5 /* styx-relay.gd */,
+				521E481D2C88A4DB001ACFC5 /* StyxVisionScene.tscn */,
+				521E481E2C88A4DB001ACFC5 /* world.gd */,
+			);
+			path = Godot;
+			sourceTree = "<group>";
+		};
 		5239B3972C888E790052A684 = {
 			isa = PBXGroup;
 			children = (
+				521E481F2C88A4DB001ACFC5 /* Godot */,
 				5239B3A22C888E790052A684 /* Styx */,
 				5239B3B42C888E7A0052A684 /* StyxTests */,
 				5239B3BE2C888E7A0052A684 /* StyxUITests */,
@@ -244,8 +362,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				521E48312C88A4DB001ACFC5 /* styx-relay.gd in Resources */,
+				521E48282C88A4DB001ACFC5 /* VisionVolumeCamera.tscn in Resources */,
+				521E48262C88A4DB001ACFC5 /* SharePlay.gd in Resources */,
+				521E48252C88A4DB001ACFC5 /* rk_audio_stream_player_3d.gd in Resources */,
+				521E48212C88A4DB001ACFC5 /* godot_vision.gd in Resources */,
 				5239B3AC2C888E7A0052A684 /* Preview Assets.xcassets in Resources */,
+				521E48232C88A4DB001ACFC5 /* GodotVision_autoload.tscn in Resources */,
+				521E48272C88A4DB001ACFC5 /* vision_volume_camera.gd in Resources */,
+				521E482E2C88A4DB001ACFC5 /* icon.svg in Resources */,
+				521E482B2C88A4DB001ACFC5 /* test_camera_rotation.gd in Resources */,
+				521E48222C88A4DB001ACFC5 /* GodotVision_autoload.gd in Resources */,
+				521E482D2C88A4DB001ACFC5 /* column_api.gd in Resources */,
+				521E48302C88A4DB001ACFC5 /* project.godot in Resources */,
+				521E48332C88A4DB001ACFC5 /* world.gd in Resources */,
+				521E48202C88A4DB001ACFC5 /* auto_join_shareplay.gd in Resources */,
 				5239B3A82C888E7A0052A684 /* Assets.xcassets in Resources */,
+				521E482C2C88A4DB001ACFC5 /* .gitignore in Resources */,
+				521E48242C88A4DB001ACFC5 /* plugin.cfg in Resources */,
+				521E482F2C88A4DB001ACFC5 /* icon.svg.import in Resources */,
+				521E48322C88A4DB001ACFC5 /* StyxVisionScene.tscn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +574,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Styx/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Godot/addons/godot-jolt/visionos",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Styx/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Styx;
@@ -478,6 +618,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Styx/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Godot/addons/godot-jolt/visionos",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Styx/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Styx;

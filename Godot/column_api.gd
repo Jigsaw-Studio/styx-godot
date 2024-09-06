@@ -36,12 +36,12 @@ func display_domain_name():
     # Create a new Label3D for the domain name
     var label = Label3D.new()
     label.text = domain_name
-    
+
     # Position the label on the side of the column
     label.transform.origin = transform.origin + Vector3(0, 0, -0.06)  # Adjust position as needed
-    
+
     # Rotate the label to align with the side of the column
     label.transform.basis = Basis(Vector3(0, 1, 0), -PI / 2)  # Rotate 90 degrees counterclockwise
-    
+
     # Add the label to the column node
     add_child(label)

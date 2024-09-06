@@ -64,13 +64,13 @@ func visualize_data(traffic_data) -> void:
         if column == null:
             print("Error: Could not create instance of the column script.")
             return
-        
+
         # Adjust the mesh size based on the height ratio
         if column.mesh != null:
             column.mesh.size = Vector3(0.1, height_ratio * 10, 0.1)  # Scale height by the ratio
         else:
             print("Error: Mesh not initialized properly.")
-        
+
         # Set the position of the column in the scene
         column.transform.origin = Vector3(index * 0.2, height_ratio * 5 - 2, 7)
 

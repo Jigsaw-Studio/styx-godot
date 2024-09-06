@@ -46,13 +46,13 @@ func receive_response():
     while udp_client.get_available_packet_count() > 0:
         var packet: PackedByteArray = udp_client.get_packet()
         var response: String = packet.get_string_from_utf8()
-        
+
         # Parse the fragment
         var delimiter_index: int = response.find(":")
         if delimiter_index == -1:
             print("Received malformed packet: %s" % response)
             continue
-        
+
         var header: String = response.substr(0, delimiter_index)
         var body: String = response.substr(delimiter_index + 1)
 
@@ -61,23 +61,23 @@ func receive_response():
         if fragment_info.size() != 2:
             print("Received malformed packet header: %s" % header)
             continue
-        
+
         var fragment_num: int = int(fragment_info[0])
         var total_fragments: int = int(fragment_info[1])
-        
+
         # Store the fragment
         if !packet_fragments.has(fragment_num):
             packet_fragments[fragment_num] = body
-        
+
         # Check if all fragments have been received
         if packet_fragments.size() == total_fragments:
             var complete_response: String = ""
             for i in range(1, total_fragments + 1):
                 complete_response += packet_fragments[i]
-            
+
             # All fragments received, process the response
             _on_request_completed(null, 200, [], complete_response)
-            
+
             # Clear stored fragments for the next message
             packet_fragments.clear()
 
@@ -85,7 +85,7 @@ func receive_response():
 func _on_request_completed(_result, response_code, _headers, body):
     if response_code == 200:
         var json = JSON.new()
-        
+
         var json_result = json.parse(body)
 
         if json_result == OK:

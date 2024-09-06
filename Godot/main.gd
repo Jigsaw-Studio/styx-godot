@@ -7,13 +7,25 @@ func _ready():
     xr_interface = XRServer.find_interface("OpenXR")
     if xr_interface and xr_interface.is_initialized():
         print("OpenXR initialized")
-        
+
         # Turn off v-sync!
         DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 
-        if xr_interface and xr_interface.is_passthrough_supported():
-            if !xr_interface.start_passthrough():
-                return false
+        get_viewport().use_xr = true
+
+        enable_passthrough()
+    else:
+        print("OpenXR not initialized, please check if your headset is connected")
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(_delta):
+    pass
+
+func enable_passthrough() -> bool:
+    xr_interface = XRServer.primary_interface
+    if xr_interface and xr_interface.is_passthrough_supported():
+        if !xr_interface.start_passthrough():
+            return false
         else:
             var modes: Array = xr_interface.get_supported_environment_blend_modes()
             if xr_interface.XR_ENV_BLEND_MODE_ALPHA_BLEND in modes:
@@ -21,10 +33,6 @@ func _ready():
             else:
                 return false
 
-        get_viewport().use_xr = true
-    else:
-        print("OpenXR not initialized, please check if your headset is connected")
+        get_viewport().transparent_bg = true
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(_delta):
-    pass
+    return true

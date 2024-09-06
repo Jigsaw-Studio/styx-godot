@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://main.gd" id="1_1ivsp"]
 [ext_resource type="PackedScene" uid="uid://biunegs8tkvn0" path="res://addons/godot_vision/VisionVolumeCamera.tscn" id="1_ic2f4"]
-[ext_resource type="Script" path="res://styx-relay.gd" id="2_g60ry"]
+[ext_resource type="Script" path="res://styx_remote.gd" id="3_a7cs5"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_rxnea"]
 
@@ -47,5 +47,5 @@ radial_segments = 100
 rings = 64
 material = SubResource("StandardMaterial3D_n7536")
 
-[node name="StyxRelayNode3D" type="Node3D" parent="."]
-script = ExtResource("2_g60ry")
+[node name="StyxRemoteNode3D" type="Node3D" parent="."]
+script = ExtResource("3_a7cs5")

@@ -1,5 +1,7 @@
 extends Node
 
+class_name StyxApi
+
 # Load the network visualization script
 var network_visualization = preload("res://network_visualization.gd")
 var nv = null
@@ -26,9 +28,11 @@ var endpoints: Dictionary = {
 }
 
 # Current endpoint
-var current_endpoint: String = "remote"
+var current_endpoint: String = ""
 
-func _ready() -> void:
+# Initialize styx_api with a specific endpoint
+func init(endpoint: String) -> void:
+    current_endpoint = endpoint
     nv = network_visualization.new()
     add_child(nv)
 
@@ -40,7 +44,7 @@ func _ready() -> void:
 
     send_request()
 
-func send_request():
+func send_request() -> void:
     var endpoint_data = endpoints.get(current_endpoint)
     if endpoint_data == null:
         print("Endpoint not found:", current_endpoint)
@@ -133,7 +137,7 @@ func calculate_traffic_remote(parsed_data: Array) -> Dictionary:
     return nv.calculate_traffic_remote(parsed_data)
 
 func calculate_traffic_raw(parsed_data: Array) -> Dictionary:
-   return nv.calculate_traffic_raw(parsed_data)
+    return nv.calculate_traffic_raw(parsed_data)
 
 func visualize_data_remote(traffic_data: Dictionary) -> void:
     print("Visualizing remote traffic:", traffic_data)

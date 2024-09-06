@@ -2,17 +2,11 @@ extends Node
 
 class_name NetworkVisualization
 
-func calculate_top_traffic(api_endpoint, data_array) -> Dictionary:
+func calculate_traffic_remote(data_array) -> Dictionary:
     var traffic_dict: Dictionary = {}
 
     for entry in data_array:
-        var address: String = ""
-        if api_endpoint == "raw":
-            address = entry["remote"]
-            if "address" in entry.keys():
-                address = entry["address"]
-        elif api_endpoint == "remote":
-            address = entry["address"]
+        var address: String = entry["address"]
         var total_traffic = entry["sent"] + entry["received"]
         traffic_dict[address] = total_traffic
 
@@ -29,8 +23,19 @@ func calculate_top_traffic(api_endpoint, data_array) -> Dictionary:
 
     return top_traffic
 
+func calculate_traffic_raw(parsed_data: Array) -> Dictionary:
+    var raw_data: Dictionary = {}
+    for entry in parsed_data:
+        var domain = entry["domain"]
+        if raw_data.has(domain):
+            raw_data[domain]["sent"] += entry["sent"]
+            raw_data[domain]["received"] += entry["received"]
+        else:
+            raw_data[domain] = {"sent": entry["sent"], "received": entry["received"]}
+    return raw_data
+
 # Function to visualize the data as 3D columns
-func visualize_data(traffic_data) -> void:
+func visualize_data_remote(traffic_data) -> void:
     # Ensure ColumnsNode exists or create it dynamically
     var columns_node: Node = get_node_or_null("ColumnsNode")
     if columns_node == null:
@@ -54,7 +59,7 @@ func visualize_data(traffic_data) -> void:
         var height_ratio: float = float(total_traffic) / float(max_traffic)
 
         # Load the column script
-        var column_script = load("res://column_api.gd")
+        var column_script = load("res://column.gd")
         if column_script == null:
             print("Error: Script not loaded properly.")
             return
@@ -81,3 +86,6 @@ func visualize_data(traffic_data) -> void:
         columns_node.add_child(column)
 
         index += 1
+
+func visualize_data_raw(data) -> void:
+    return

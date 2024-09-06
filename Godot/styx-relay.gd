@@ -1,20 +1,37 @@
 extends Node
 
+# Load the network visualization script
 var network_visualization = preload("res://network_visualization.gd")
 var nv = null
 
+# UDP client setup
 var udp_client: PacketPeerUDP = PacketPeerUDP.new()
 var packet_fragments := {}
 var expected_fragments := {}
 
+# Define server settings
 var server_ip: String = "172.16.100.1"
 var server_port: int = 8192
-var api_endpoint: String = "remote"
-var traffic_data: Dictionary = {}
+
+# Endpoints
+var endpoints: Dictionary = {
+    "remote": {
+        "http_path": "/api/v1/remote?relative=1h",
+        "calculate": "calculate_traffic_remote",
+        "visualize": "visualize_data_remote" },
+    "raw": {
+        "http_path": "/api/v1/raw?relative=10s",
+        "calculate": "calculate_traffic_raw",
+        "visualize": "visualize_data_raw" }
+}
+
+# Current endpoint
+var current_endpoint: String = "remote"
 
 func _ready() -> void:
     nv = network_visualization.new()
     add_child(nv)
+
     # Create and bind the UDP client to any available port
     var bind_result: int = udp_client.bind(0)
     if bind_result != OK:
@@ -24,7 +41,12 @@ func _ready() -> void:
     send_request()
 
 func send_request():
-    var json_data: Dictionary = {"GET": "/api/v1/" + api_endpoint + "?relative=1h"}
+    var endpoint_data = endpoints.get(current_endpoint)
+    if endpoint_data == null:
+        print("Endpoint not found:", current_endpoint)
+        return
+
+    var json_data: Dictionary = {"GET": endpoint_data.http_path}
     var json_str: String = JSON.stringify(json_data)
 
     # Connect to the server's IP and port
@@ -85,18 +107,38 @@ func receive_response():
 func _on_request_completed(_result, response_code, _headers, body):
     if response_code == 200:
         var json = JSON.new()
-
         var json_result = json.parse(body)
 
         if json_result == OK:
             var parsed_data = json.get_data()
             if parsed_data.size() > 0:
-                traffic_data = nv.calculate_top_traffic(api_endpoint, parsed_data)
-                print("Traffic Data:", traffic_data)
-                nv.visualize_data(traffic_data)
+                # Call the appropriate method for traffic calculation and visualization
+                var endpoint_data = endpoints.get(current_endpoint)
+                if endpoint_data != null:
+                    var calculate_method = endpoint_data.calculate
+                    var visualize_method = endpoint_data.visualize
+
+                    var data: Dictionary = call(calculate_method, parsed_data)
+                    call(visualize_method, data)
+                else:
+                    print("Endpoint configuration not found for", current_endpoint)
             else:
                 print("No data found in the JSON response")
         else:
             print("Failed to parse JSON: ", json.error_string)
     else:
         print("Request failed with response code: ", response_code)
+
+func calculate_traffic_remote(parsed_data: Array) -> Dictionary:
+    return nv.calculate_traffic_remote(parsed_data)
+
+func calculate_traffic_raw(parsed_data: Array) -> Dictionary:
+   return nv.calculate_traffic_raw(parsed_data)
+
+func visualize_data_remote(traffic_data: Dictionary) -> void:
+    print("Visualizing remote traffic:", traffic_data)
+    nv.visualize_data_remote(traffic_data)
+
+func visualize_data_raw(traffic_data: Dictionary) -> void:
+    print("Visualizing raw traffic:", traffic_data)
+    nv.visualize_data_raw(traffic_data)

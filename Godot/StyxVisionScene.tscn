@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://btbp8ceu62v4l"]
 
-[ext_resource type="Script" path="res://world.gd" id="1_1ivsp"]
+[ext_resource type="Script" path="res://main.gd" id="1_1ivsp"]
 [ext_resource type="PackedScene" uid="uid://biunegs8tkvn0" path="res://addons/godot_vision/VisionVolumeCamera.tscn" id="1_ic2f4"]
 [ext_resource type="Script" path="res://styx-relay.gd" id="2_g60ry"]
 
@@ -10,7 +10,7 @@
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n7536"]
 
-[node name="StyxVisionNode" type="Node3D"]
+[node name="Main" type="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0050149, -0.00658166, 0.00135791)
 script = ExtResource("1_1ivsp")
 

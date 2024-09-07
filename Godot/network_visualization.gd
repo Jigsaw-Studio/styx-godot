@@ -1,11 +1,9 @@
 extends Node
 
-class_name NetworkVisualization
-
-func calculate_traffic_remote(data_array) -> Dictionary:
+func calculate_traffic_remote(parsed_data: Array) -> Dictionary:
     var traffic_dict: Dictionary = {}
 
-    for entry in data_array:
+    for entry in parsed_data:
         var address: String = entry["address"]
         var total_traffic = entry["sent"] + entry["received"]
         traffic_dict[address] = total_traffic
@@ -24,24 +22,29 @@ func calculate_traffic_remote(data_array) -> Dictionary:
     return top_traffic
 
 func calculate_traffic_raw(parsed_data: Array) -> Dictionary:
-    var raw_data: Dictionary = {}
+    var data_array: Array = []
+
     for entry in parsed_data:
-        var domain = entry["domain"]
-        if raw_data.has(domain):
-            raw_data[domain]["sent"] += entry["sent"]
-            raw_data[domain]["received"] += entry["received"]
-        else:
-            raw_data[domain] = {"sent": entry["sent"], "received": entry["received"]}
-    return raw_data
+        var address: String = entry["remote"]
+        if not "address" in entry.keys():
+            entry["address"] = entry["remote"]
+        data_array.append(entry)
+
+    return calculate_traffic_remote(data_array)
 
 # Function to visualize the data as 3D columns
-func visualize_data_remote(traffic_data) -> void:
+func visualize_data_remote(entry: Dictionary, traffic_data: Dictionary) -> void:
     # Ensure ColumnsNode exists or create it dynamically
     var columns_node: Node = get_node_or_null("ColumnsNode")
-    if columns_node == null:
-        columns_node = Node3D.new()  # Use Node3D, Spatial, or Node depending on your scene type
-        columns_node.name = "ColumnsNode"
-        add_child(columns_node)
+
+    # If ColumnsNode exists, remove all of its children to avoid memory leaks
+    if columns_node != null:
+        columns_node.queue_free()  # Safely remove the previous ColumnsNode and its children
+
+    # Create a new ColumnsNode
+    columns_node = Node3D.new()
+    columns_node.name = "ColumnsNode"
+    add_child(columns_node)
 
     if traffic_data.size() == 0:
         print("No traffic data to visualize.")
@@ -65,27 +68,21 @@ func visualize_data_remote(traffic_data) -> void:
             return
 
         # Create a new instance of the column script (which extends MeshInstance3D)
-        var column = column_script.new()
+        var column = column_script.new(address, entry["color"], entry["label"])
         if column == null:
             print("Error: Could not create instance of the column script.")
             return
 
         # Adjust the mesh size based on the height ratio
-        if column.mesh != null:
-            column.mesh.size = Vector3(0.1, height_ratio * 10, 0.1)  # Scale height by the ratio
-        else:
-            print("Error: Mesh not initialized properly.")
+        column.scale = Vector3(1, height_ratio * 10, 1)  # Scale the height by the ratio, keep width and depth the same
 
         # Set the position of the column in the scene
-        column.transform.origin = Vector3(index * 0.2, height_ratio * 5 - 2, 7)
-
-        # Set the address for the column
-        column.domain_name = address
+        column.transform.origin = Vector3(index * 0.2, (height_ratio * 5) - 2, 7)
 
         # Add the column to the dynamically created ColumnsNode
         columns_node.add_child(column)
 
         index += 1
 
-func visualize_data_raw(data) -> void:
-    return
+func visualize_data_raw(entry: Dictionary, data: Dictionary) -> void:
+    return visualize_data_remote(entry, data)

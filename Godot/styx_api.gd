@@ -18,16 +18,19 @@ var server_port: int = 8192
 # Endpoints
 var endpoints: Dictionary = {
     "remote": {
-        "http_path": "/api/v1/remote?relative=1h",
+        "api_path": "/api/v1/remote?relative=1h",
         "calculate": "calculate_traffic_remote",
-        "visualize": "visualize_data_remote" },
+        "visualize": "visualize_data_remote",
+        "color": [1, 0, 0], # blue
+        "label": true },
     "raw": {
-        "http_path": "/api/v1/raw?relative=10s",
+        "api_path": "/api/v1/raw?relative=10s",
         "calculate": "calculate_traffic_raw",
-        "visualize": "visualize_data_raw" }
+        "visualize": "visualize_data_raw",
+        "color": [0, 0, 1], # red
+        "label": false }
 }
 
-# Current endpoint
 var current_endpoint: String = ""
 
 # Initialize styx_api with a specific endpoint
@@ -42,15 +45,13 @@ func init(endpoint: String) -> void:
         print("Failed to bind UDP client.")
         return
 
-    send_request()
-
 func send_request() -> void:
     var endpoint_data = endpoints.get(current_endpoint)
     if endpoint_data == null:
         print("Endpoint not found:", current_endpoint)
         return
 
-    var json_data: Dictionary = {"GET": endpoint_data.http_path}
+    var json_data: Dictionary = {"GET": endpoint_data.api_path}
     var json_str: String = JSON.stringify(json_data)
 
     # Connect to the server's IP and port
@@ -139,10 +140,10 @@ func calculate_traffic_remote(parsed_data: Array) -> Dictionary:
 func calculate_traffic_raw(parsed_data: Array) -> Dictionary:
     return nv.calculate_traffic_raw(parsed_data)
 
-func visualize_data_remote(traffic_data: Dictionary) -> void:
-    print("Visualizing remote traffic:", traffic_data)
-    nv.visualize_data_remote(traffic_data)
+func visualize_data_remote(data: Dictionary) -> void:
+    print("Visualizing remote data:", data)
+    nv.visualize_data_remote(endpoints.get(current_endpoint), data)
 
-func visualize_data_raw(traffic_data: Dictionary) -> void:
-    print("Visualizing raw traffic:", traffic_data)
-    nv.visualize_data_raw(traffic_data)
+func visualize_data_raw(data: Dictionary) -> void:
+    print("Visualizing raw data:", data)
+    nv.visualize_data_raw(endpoints.get(current_endpoint), data)

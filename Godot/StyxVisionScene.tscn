@@ -1,12 +1,15 @@
-[gd_scene load_steps=7 format=3 uid="uid://btbp8ceu62v4l"]
+[gd_scene load_steps=8 format=3 uid="uid://btbp8ceu62v4l"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_1ivsp"]
 [ext_resource type="PackedScene" uid="uid://biunegs8tkvn0" path="res://addons/godot_vision/VisionVolumeCamera.tscn" id="1_ic2f4"]
 [ext_resource type="Script" path="res://styx_remote.gd" id="3_a7cs5"]
+[ext_resource type="Script" path="res://styx_raw.gd" id="4_ee0e7"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_rxnea"]
+size = Vector3(0.5, 0.5, 0.5)
 
 [sub_resource type="BoxMesh" id="BoxMesh_8sdxf"]
+size = Vector3(0.5, 0.5, 0.5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n7536"]
 
@@ -49,3 +52,6 @@ material = SubResource("StandardMaterial3D_n7536")
 
 [node name="StyxRemoteNode3D" type="Node3D" parent="."]
 script = ExtResource("3_a7cs5")
+
+[node name="StyxRawNode3D" type="Node3D" parent="."]
+script = ExtResource("4_ee0e7")

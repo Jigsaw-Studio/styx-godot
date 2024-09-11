@@ -1,13 +1,12 @@
 extends MeshInstance3D
 
-var domain_name: String = ""
 var color: Array = [1, 1, 1]  # Default white
-var label_show: bool = false  # Default no label
+var label_enabled: bool = false  # Default no label
 
-func _init(domain_name: String = "", color: Array = [1, 1, 1], label: bool = false):
-    self.domain_name = domain_name
-    self.color = color
-    self.label_show = label
+func _init(column_color: Array = [1, 1, 1], label_content: String = "", label_show: bool = false):
+    self.color = column_color
+    self.name = label_content
+    self.label_enabled = label_show
 
     # Initialize the BoxMesh
     var box_mesh = BoxMesh.new()
@@ -38,28 +37,27 @@ func _ready():
     static_body.input_ray_pickable = true
 
     # Display the label if label_show is true
-    if self.label_show:
+    if self.label_enabled:
         display_domain_name()
 
 # Handle the input event (e.g., tap or click)
 func _input_event(_viewport, event, _shape_idx):
     if event is InputEventMouseButton and event.is_pressed():
-        print("Column tapped: ", domain_name)
+        print("Column tapped: ", name)
         display_domain_name()
 
 # Function to display the domain name and traffic on the side of the column
 func display_domain_name():
 
-    # Create a new Label3D for the domain name
+    # Create a new Label3D
     var label = Label3D.new()
-    label.text = domain_name
+    label.text = name
 
    # Rotate the label
     label.transform.basis = Basis(Vector3(0, 1, 0), -PI / 2)
 
     # Position the label near the column
-    var column_width = (mesh as BoxMesh).size.x
-    var column_height = (mesh as BoxMesh).size.y
+    var column_height: float = (mesh as BoxMesh).size.y
     label.transform.origin = transform.origin + Vector3(-1.2, column_height, -7)  # Adjust position as needed
 
     # Add the label to the column node

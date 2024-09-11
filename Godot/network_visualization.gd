@@ -68,7 +68,7 @@ func visualize_data_remote(entry: Dictionary, traffic_data: Dictionary) -> void:
             return
 
         # Create a new instance of the column script (which extends MeshInstance3D)
-        var column = column_script.new(address, entry["color"], entry["label"])
+        var column = column_script.new(entry["color"], address, entry["label"])
         if column == null:
             print("Error: Could not create instance of the column script.")
             return

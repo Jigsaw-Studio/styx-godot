@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dcudc0fdd7x62"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g5xi5"]
+albedo_color = Color(0, 0.501961, 0, 1)
+
+[node name="ConeNode3D" type="Node3D"]
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -0.707107, -0.707107, 0, 0.707107, -0.707107, 0, 1, 0)
+radius = 1.0
+sides = 64
+cone = true
+material = SubResource("StandardMaterial3D_g5xi5")

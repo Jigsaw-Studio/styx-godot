@@ -3,318 +3,166 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		520A8DC22C88932500BD52AE /* GodotVision in Frameworks */ = {isa = PBXBuildFile; productRef = 520A8DC12C88932500BD52AE /* GodotVision */; };
-		5239B3A42C888E790052A684 /* StyxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3A32C888E790052A684 /* StyxApp.swift */; };
-		5239B3A62C888E790052A684 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3A52C888E790052A684 /* ContentView.swift */; };
-		5239B3A82C888E7A0052A684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5239B3A72C888E7A0052A684 /* Assets.xcassets */; };
-		5239B3AC2C888E7A0052A684 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5239B3AB2C888E7A0052A684 /* Preview Assets.xcassets */; };
-		5239B3B62C888E7A0052A684 /* StyxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3B52C888E7A0052A684 /* StyxTests.swift */; };
-		5239B3C02C888E7A0052A684 /* StyxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3BF2C888E7A0052A684 /* StyxUITests.swift */; };
-		5239B3C22C888E7A0052A684 /* StyxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5239B3C12C888E7A0052A684 /* StyxUITestsLaunchTests.swift */; };
-		523E1AC82C88AB6F00B48FA3 /* Godot in Resources */ = {isa = PBXBuildFile; fileRef = 523E1AC72C88AB6F00B48FA3 /* Godot */; };
+		5249F06D2D1DDA720011D136 /* GodotVision in Frameworks */ = {isa = PBXBuildFile; productRef = 5249F06C2D1DDA720011D136 /* GodotVision */; };
+		52C68FCF2D1F4B850056A16A /* SwiftGodotKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52C68FCE2D1F4B850056A16A /* SwiftGodotKit */; };
+		52C68FD22D1F4B970056A16A /* GodotVision in Frameworks */ = {isa = PBXBuildFile; productRef = 52C68FD12D1F4B970056A16A /* GodotVision */; };
+		DE054E0F2CB954A500D7F4C8 /* GodotInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE054E0E2CB954A200D7F4C8 /* GodotInput.swift */; };
+		DE054E132CB956F500D7F4C8 /* ScenePhaseWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE054E122CB956F200D7F4C8 /* ScenePhaseWatcher.swift */; };
+		DE54EABA2B3C75D600594A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE54EAB92B3C75D600594A05 /* Assets.xcassets */; };
+		DE54EABD2B3C75D600594A05 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE54EABC2B3C75D600594A05 /* Preview Assets.xcassets */; };
+		DE897A0F2CB93B31003265C7 /* RealityKitToolbox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE897A0E2CB93B2F003265C7 /* RealityKitToolbox.swift */; };
+		DE897A112CB93C54003265C7 /* HandTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE897A102CB93C52003265C7 /* HandTracking.swift */; };
+		DEEA88FC2CB40AF200A8CD7D /* StyxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEA88FB2CB40AF200A8CD7D /* StyxApp.swift */; };
+		DEF34D782CCF886F009B8A49 /* Godot_Project in Resources */ = {isa = PBXBuildFile; fileRef = DEF34D772CCF886B009B8A49 /* Godot_Project */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		5239B3B22C888E7A0052A684 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5239B3982C888E790052A684 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5239B39F2C888E790052A684;
-			remoteInfo = Styx;
+/* Begin PBXCopyFilesBuildPhase section */
+		DE89B3342CB80548003265C7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5239B3BC2C888E7A0052A684 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5239B3982C888E790052A684 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5239B39F2C888E790052A684;
-			remoteInfo = Styx;
-		};
-/* End PBXContainerItemProxy section */
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		521E48052C88A4DB001ACFC5 /* auto_join_shareplay.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = auto_join_shareplay.gd; sourceTree = "<group>"; };
-		521E48062C88A4DB001ACFC5 /* godot_vision.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = godot_vision.gd; sourceTree = "<group>"; };
-		521E48072C88A4DB001ACFC5 /* GodotVision_autoload.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GodotVision_autoload.gd; sourceTree = "<group>"; };
-		521E48082C88A4DB001ACFC5 /* GodotVision_autoload.tscn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GodotVision_autoload.tscn; sourceTree = "<group>"; };
-		521E48092C88A4DB001ACFC5 /* plugin.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = plugin.cfg; sourceTree = "<group>"; };
-		521E480A2C88A4DB001ACFC5 /* rk_audio_stream_player_3d.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rk_audio_stream_player_3d.gd; sourceTree = "<group>"; };
-		521E480B2C88A4DB001ACFC5 /* SharePlay.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SharePlay.gd; sourceTree = "<group>"; };
-		521E480C2C88A4DB001ACFC5 /* vision_volume_camera.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = vision_volume_camera.gd; sourceTree = "<group>"; };
-		521E480D2C88A4DB001ACFC5 /* VisionVolumeCamera.tscn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VisionVolumeCamera.tscn; sourceTree = "<group>"; };
-		521E480F2C88A4DB001ACFC5 /* godot-jolt_visionos_simulator.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "godot-jolt_visionos_simulator.framework"; sourceTree = "<group>"; };
-		521E48102C88A4DB001ACFC5 /* godot-jolt_visionos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "godot-jolt_visionos.framework"; sourceTree = "<group>"; };
-		521E48142C88A4DB001ACFC5 /* test_camera_rotation.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test_camera_rotation.gd; sourceTree = "<group>"; };
-		521E48172C88A4DB001ACFC5 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
-		521E48182C88A4DB001ACFC5 /* column_api.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = column_api.gd; sourceTree = "<group>"; };
-		521E48192C88A4DB001ACFC5 /* icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.svg; sourceTree = "<group>"; };
-		521E481A2C88A4DB001ACFC5 /* icon.svg.import */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = icon.svg.import; sourceTree = "<group>"; };
-		521E481B2C88A4DB001ACFC5 /* project.godot */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = project.godot; sourceTree = "<group>"; };
-		521E481C2C88A4DB001ACFC5 /* styx-relay.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "styx-relay.gd"; sourceTree = "<group>"; };
-		521E481D2C88A4DB001ACFC5 /* StyxVisionScene.tscn */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StyxVisionScene.tscn; sourceTree = "<group>"; };
-		521E481E2C88A4DB001ACFC5 /* world.gd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = world.gd; sourceTree = "<group>"; };
-		5239B3A02C888E790052A684 /* Styx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Styx.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5239B3A32C888E790052A684 /* StyxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxApp.swift; sourceTree = "<group>"; };
-		5239B3A52C888E790052A684 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		5239B3A72C888E7A0052A684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5239B3A92C888E7A0052A684 /* Styx.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Styx.entitlements; sourceTree = "<group>"; };
-		5239B3AB2C888E7A0052A684 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		5239B3B12C888E7A0052A684 /* StyxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5239B3B52C888E7A0052A684 /* StyxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxTests.swift; sourceTree = "<group>"; };
-		5239B3BB2C888E7A0052A684 /* StyxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5239B3BF2C888E7A0052A684 /* StyxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxUITests.swift; sourceTree = "<group>"; };
-		5239B3C12C888E7A0052A684 /* StyxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		523E1AC72C88AB6F00B48FA3 /* Godot */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Godot; sourceTree = "<group>"; };
-		52C15BD82C889F3B003F2382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DE054E0E2CB954A200D7F4C8 /* GodotInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GodotInput.swift; sourceTree = "<group>"; };
+		DE054E122CB956F200D7F4C8 /* ScenePhaseWatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenePhaseWatcher.swift; sourceTree = "<group>"; };
+		DE54EAAC2B3C75D500594A05 /* Styx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Styx.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE54EAB92B3C75D600594A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE54EABC2B3C75D600594A05 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DE54EABE2B3C75D600594A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE897A0E2CB93B2F003265C7 /* RealityKitToolbox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealityKitToolbox.swift; sourceTree = "<group>"; };
+		DE897A102CB93C52003265C7 /* HandTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandTracking.swift; sourceTree = "<group>"; };
+		DEEA88FB2CB40AF200A8CD7D /* StyxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyxApp.swift; sourceTree = "<group>"; };
+		DEF34D772CCF886B009B8A49 /* Godot_Project */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Godot_Project; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DE897A082CB93AAE003265C7 /* Controls */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controls; sourceTree = "<group>"; };
+		DE897A0C2CB93B1B003265C7 /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		5239B39D2C888E790052A684 /* Frameworks */ = {
+		DE54EAA92B3C75D500594A05 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				520A8DC22C88932500BD52AE /* GodotVision in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5239B3AE2C888E7A0052A684 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5239B3B82C888E7A0052A684 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5249F06D2D1DDA720011D136 /* GodotVision in Frameworks */,
+				52C68FCF2D1F4B850056A16A /* SwiftGodotKit in Frameworks */,
+				52C68FD22D1F4B970056A16A /* GodotVision in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		521E480E2C88A4DB001ACFC5 /* godot_vision */ = {
+		DE54EAA32B3C75D500594A05 = {
 			isa = PBXGroup;
 			children = (
-				521E48052C88A4DB001ACFC5 /* auto_join_shareplay.gd */,
-				521E48062C88A4DB001ACFC5 /* godot_vision.gd */,
-				521E48072C88A4DB001ACFC5 /* GodotVision_autoload.gd */,
-				521E48082C88A4DB001ACFC5 /* GodotVision_autoload.tscn */,
-				521E48092C88A4DB001ACFC5 /* plugin.cfg */,
-				521E480A2C88A4DB001ACFC5 /* rk_audio_stream_player_3d.gd */,
-				521E480B2C88A4DB001ACFC5 /* SharePlay.gd */,
-				521E480C2C88A4DB001ACFC5 /* vision_volume_camera.gd */,
-				521E480D2C88A4DB001ACFC5 /* VisionVolumeCamera.tscn */,
-			);
-			path = godot_vision;
-			sourceTree = "<group>";
-		};
-		521E48112C88A4DB001ACFC5 /* visionos */ = {
-			isa = PBXGroup;
-			children = (
-				521E480F2C88A4DB001ACFC5 /* godot-jolt_visionos_simulator.framework */,
-				521E48102C88A4DB001ACFC5 /* godot-jolt_visionos.framework */,
-			);
-			path = visionos;
-			sourceTree = "<group>";
-		};
-		521E48122C88A4DB001ACFC5 /* godot-jolt */ = {
-			isa = PBXGroup;
-			children = (
-				521E48112C88A4DB001ACFC5 /* visionos */,
-			);
-			path = "godot-jolt";
-			sourceTree = "<group>";
-		};
-		521E48132C88A4DB001ACFC5 /* addons */ = {
-			isa = PBXGroup;
-			children = (
-				521E480E2C88A4DB001ACFC5 /* godot_vision */,
-				521E48122C88A4DB001ACFC5 /* godot-jolt */,
-			);
-			path = addons;
-			sourceTree = "<group>";
-		};
-		521E48152C88A4DB001ACFC5 /* camera_rotation */ = {
-			isa = PBXGroup;
-			children = (
-				521E48142C88A4DB001ACFC5 /* test_camera_rotation.gd */,
-			);
-			path = camera_rotation;
-			sourceTree = "<group>";
-		};
-		521E48162C88A4DB001ACFC5 /* tests */ = {
-			isa = PBXGroup;
-			children = (
-				521E48152C88A4DB001ACFC5 /* camera_rotation */,
-			);
-			path = tests;
-			sourceTree = "<group>";
-		};
-		521E481F2C88A4DB001ACFC5 /* Godot */ = {
-			isa = PBXGroup;
-			children = (
-				521E48132C88A4DB001ACFC5 /* addons */,
-				521E48162C88A4DB001ACFC5 /* tests */,
-				521E48172C88A4DB001ACFC5 /* .gitignore */,
-				521E48182C88A4DB001ACFC5 /* column_api.gd */,
-				521E48192C88A4DB001ACFC5 /* icon.svg */,
-				521E481A2C88A4DB001ACFC5 /* icon.svg.import */,
-				521E481B2C88A4DB001ACFC5 /* project.godot */,
-				521E481C2C88A4DB001ACFC5 /* styx-relay.gd */,
-				521E481D2C88A4DB001ACFC5 /* StyxVisionScene.tscn */,
-				521E481E2C88A4DB001ACFC5 /* world.gd */,
-			);
-			path = Godot;
-			sourceTree = "<group>";
-		};
-		5239B3972C888E790052A684 = {
-			isa = PBXGroup;
-			children = (
-				521E481F2C88A4DB001ACFC5 /* Godot */,
-				523E1AC72C88AB6F00B48FA3 /* Godot */,
-				5239B3A22C888E790052A684 /* Styx */,
-				5239B3B42C888E7A0052A684 /* StyxTests */,
-				5239B3BE2C888E7A0052A684 /* StyxUITests */,
-				5239B3A12C888E790052A684 /* Products */,
+				DEF34D772CCF886B009B8A49 /* Godot_Project */,
+				DE54EAAE2B3C75D500594A05 /* Styx */,
+				DE54EAAD2B3C75D500594A05 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		5239B3A12C888E790052A684 /* Products */ = {
+		DE54EAAD2B3C75D500594A05 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5239B3A02C888E790052A684 /* Styx.app */,
-				5239B3B12C888E7A0052A684 /* StyxTests.xctest */,
-				5239B3BB2C888E7A0052A684 /* StyxUITests.xctest */,
+				DE54EAAC2B3C75D500594A05 /* Styx.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5239B3A22C888E790052A684 /* Styx */ = {
+		DE54EAAE2B3C75D500594A05 /* Styx */ = {
 			isa = PBXGroup;
 			children = (
-				52C15BD82C889F3B003F2382 /* Info.plist */,
-				5239B3A32C888E790052A684 /* StyxApp.swift */,
-				5239B3A52C888E790052A684 /* ContentView.swift */,
-				5239B3A72C888E7A0052A684 /* Assets.xcassets */,
-				5239B3A92C888E7A0052A684 /* Styx.entitlements */,
-				5239B3AA2C888E7A0052A684 /* Preview Content */,
+				DE897A0D2CB93B29003265C7 /* Utilities */,
+				DE897A0C2CB93B1B003265C7 /* Views */,
+				DE897A082CB93AAE003265C7 /* Controls */,
+				DEEA88FB2CB40AF200A8CD7D /* StyxApp.swift */,
+				DE54EAB92B3C75D600594A05 /* Assets.xcassets */,
+				DE54EABE2B3C75D600594A05 /* Info.plist */,
+				DE54EABB2B3C75D600594A05 /* Preview Content */,
 			);
 			path = Styx;
 			sourceTree = "<group>";
 		};
-		5239B3AA2C888E7A0052A684 /* Preview Content */ = {
+		DE54EABB2B3C75D600594A05 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				5239B3AB2C888E7A0052A684 /* Preview Assets.xcassets */,
+				DE54EABC2B3C75D600594A05 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		5239B3B42C888E7A0052A684 /* StyxTests */ = {
+		DE897A0D2CB93B29003265C7 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				5239B3B52C888E7A0052A684 /* StyxTests.swift */,
+				DE054E122CB956F200D7F4C8 /* ScenePhaseWatcher.swift */,
+				DE054E0E2CB954A200D7F4C8 /* GodotInput.swift */,
+				DE897A102CB93C52003265C7 /* HandTracking.swift */,
+				DE897A0E2CB93B2F003265C7 /* RealityKitToolbox.swift */,
 			);
-			path = StyxTests;
-			sourceTree = "<group>";
-		};
-		5239B3BE2C888E7A0052A684 /* StyxUITests */ = {
-			isa = PBXGroup;
-			children = (
-				5239B3BF2C888E7A0052A684 /* StyxUITests.swift */,
-				5239B3C12C888E7A0052A684 /* StyxUITestsLaunchTests.swift */,
-			);
-			path = StyxUITests;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5239B39F2C888E790052A684 /* Styx */ = {
+		DE54EAAB2B3C75D500594A05 /* Styx */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5239B3C52C888E7A0052A684 /* Build configuration list for PBXNativeTarget "Styx" */;
+			buildConfigurationList = DE54EAC12B3C75D600594A05 /* Build configuration list for PBXNativeTarget "Styx" */;
 			buildPhases = (
-				5239B39C2C888E790052A684 /* Sources */,
-				5239B39D2C888E790052A684 /* Frameworks */,
-				5239B39E2C888E790052A684 /* Resources */,
+				DE54EAA82B3C75D500594A05 /* Sources */,
+				DE54EAA92B3C75D500594A05 /* Frameworks */,
+				DE54EAAA2B3C75D500594A05 /* Resources */,
+				DE0F24412BC86C0600C09903 /* Run Script */,
+				DE89B3342CB80548003265C7 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DE5677492B702579002BABB4 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				DE897A082CB93AAE003265C7 /* Controls */,
+				DE897A0C2CB93B1B003265C7 /* Views */,
 			);
 			name = Styx;
 			packageProductDependencies = (
-				520A8DC12C88932500BD52AE /* GodotVision */,
+				5249F06C2D1DDA720011D136 /* GodotVision */,
+				52C68FCE2D1F4B850056A16A /* SwiftGodotKit */,
+				52C68FD12D1F4B970056A16A /* GodotVision */,
 			);
-			productName = Styx;
-			productReference = 5239B3A02C888E790052A684 /* Styx.app */;
+			productName = GodotVisionExample;
+			productReference = DE54EAAC2B3C75D500594A05 /* Styx.app */;
 			productType = "com.apple.product-type.application";
-		};
-		5239B3B02C888E7A0052A684 /* StyxTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5239B3C82C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxTests" */;
-			buildPhases = (
-				5239B3AD2C888E7A0052A684 /* Sources */,
-				5239B3AE2C888E7A0052A684 /* Frameworks */,
-				5239B3AF2C888E7A0052A684 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5239B3B32C888E7A0052A684 /* PBXTargetDependency */,
-			);
-			name = StyxTests;
-			productName = StyxTests;
-			productReference = 5239B3B12C888E7A0052A684 /* StyxTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		5239B3BA2C888E7A0052A684 /* StyxUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5239B3CB2C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxUITests" */;
-			buildPhases = (
-				5239B3B72C888E7A0052A684 /* Sources */,
-				5239B3B82C888E7A0052A684 /* Frameworks */,
-				5239B3B92C888E7A0052A684 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5239B3BD2C888E7A0052A684 /* PBXTargetDependency */,
-			);
-			name = StyxUITests;
-			productName = StyxUITests;
-			productReference = 5239B3BB2C888E7A0052A684 /* StyxUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5239B3982C888E790052A684 /* Project object */ = {
+		DE54EAA42B3C75D500594A05 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
-					5239B39F2C888E790052A684 = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					5239B3B02C888E7A0052A684 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 5239B39F2C888E790052A684;
-					};
-					5239B3BA2C888E7A0052A684 = {
-						CreatedOnToolsVersion = 15.4;
-						TestTargetID = 5239B39F2C888E790052A684;
+					DE54EAAB2B3C75D500594A05 = {
+						CreatedOnToolsVersion = 15.2;
+						LastSwiftMigration = 1520;
 					};
 				};
 			};
-			buildConfigurationList = 5239B39B2C888E790052A684 /* Build configuration list for PBXProject "Styx" */;
+			buildConfigurationList = DE54EAA72B3C75D500594A05 /* Build configuration list for PBXProject "Styx" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -322,92 +170,83 @@
 				en,
 				Base,
 			);
-			mainGroup = 5239B3972C888E790052A684;
+			mainGroup = DE54EAA32B3C75D500594A05;
 			packageReferences = (
-				520A8DC02C88932500BD52AE /* XCRemoteSwiftPackageReference "GodotVision" */,
+				52C68FCC2D1F4B690056A16A /* XCLocalSwiftPackageReference "Dependencies/SwiftGodot" */,
+				52C68FCD2D1F4B850056A16A /* XCLocalSwiftPackageReference "Dependencies/SwiftGodotKit" */,
+				52C68FD02D1F4B970056A16A /* XCLocalSwiftPackageReference "Dependencies/GodotVision" */,
 			);
-			productRefGroup = 5239B3A12C888E790052A684 /* Products */;
+			productRefGroup = DE54EAAD2B3C75D500594A05 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5239B39F2C888E790052A684 /* Styx */,
-				5239B3B02C888E7A0052A684 /* StyxTests */,
-				5239B3BA2C888E7A0052A684 /* StyxUITests */,
+				DE54EAAB2B3C75D500594A05 /* Styx */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5239B39E2C888E790052A684 /* Resources */ = {
+		DE54EAAA2B3C75D500594A05 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				523E1AC82C88AB6F00B48FA3 /* Godot in Resources */,
-				5239B3AC2C888E7A0052A684 /* Preview Assets.xcassets in Resources */,
-				5239B3A82C888E7A0052A684 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5239B3AF2C888E7A0052A684 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5239B3B92C888E7A0052A684 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DEF34D782CCF886F009B8A49 /* Godot_Project in Resources */,
+				DE54EABD2B3C75D600594A05 /* Preview Assets.xcassets in Resources */,
+				DE54EABA2B3C75D600594A05 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		DE0F24412BC86C0600C09903 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${CODESIGNING_FOLDER_PATH}/Godot_Project/addons/godot-jolt/visionos/godot-jolt_visionos.framework",
+				"${CODESIGNING_FOLDER_PATH}/Godot_Project/addons/godot-jolt/visionos/godot-jolt_visionos_simulator.framework",
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#\n# Sign dynamically loaded Godot gdextension .frameworks\n#\nfor i in $(seq 0 $(expr $SCRIPT_INPUT_FILE_COUNT - 1)); do\n    inputFileVar=\"SCRIPT_INPUT_FILE_${i}\"\n    inputFile=\"${!inputFileVar}\"\n    echo \"SIGNING.\"\n    echo \"  EXPANDED_CODE_SIGN_IDENTITY_NAME: '${EXPANDED_CODE_SIGN_IDENTITY_NAME}'\"\n    echo \"  EXPANDED_CODE_SIGN_IDENTITY:      '${EXPANDED_CODE_SIGN_IDENTITY}'\"\n    echo \"Signing file '$inputFile'\"\n    codesign --verbose --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY}\" \"$inputFile\"\ndone\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		5239B39C2C888E790052A684 /* Sources */ = {
+		DE54EAA82B3C75D500594A05 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5239B3A62C888E790052A684 /* ContentView.swift in Sources */,
-				5239B3A42C888E790052A684 /* StyxApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5239B3AD2C888E7A0052A684 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5239B3B62C888E7A0052A684 /* StyxTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5239B3B72C888E7A0052A684 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5239B3C22C888E7A0052A684 /* StyxUITestsLaunchTests.swift in Sources */,
-				5239B3C02C888E7A0052A684 /* StyxUITests.swift in Sources */,
+				DE897A0F2CB93B31003265C7 /* RealityKitToolbox.swift in Sources */,
+				DEEA88FC2CB40AF200A8CD7D /* StyxApp.swift in Sources */,
+				DE897A112CB93C54003265C7 /* HandTracking.swift in Sources */,
+				DE054E0F2CB954A500D7F4C8 /* GodotInput.swift in Sources */,
+				DE054E132CB956F500D7F4C8 /* ScenePhaseWatcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5239B3B32C888E7A0052A684 /* PBXTargetDependency */ = {
+		DE5677492B702579002BABB4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5239B39F2C888E790052A684 /* Styx */;
-			targetProxy = 5239B3B22C888E7A0052A684 /* PBXContainerItemProxy */;
-		};
-		5239B3BD2C888E7A0052A684 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5239B39F2C888E790052A684 /* Styx */;
-			targetProxy = 5239B3BC2C888E7A0052A684 /* PBXContainerItemProxy */;
+			productRef = DE5677482B702579002BABB4 /* GodotVision */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5239B3C32C888E7A0052A684 /* Debug */ = {
+		DE54EABF2B3C75D600594A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -444,7 +283,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -463,13 +302,14 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		5239B3C42C888E7A0052A684 /* Release */ = {
+		DE54EAC02B3C75D600594A05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -506,7 +346,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -518,238 +358,159 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = xros;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				VALIDATE_PRODUCT = YES;
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
-		5239B3C62C888E7A0052A684 /* Debug */ = {
+		DE54EAC22B3C75D600594A05 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Styx/Styx.entitlements;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Styx/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Godot_Project/addons/godot-jolt/visionos",
+					"$(PROJECT_DIR)/Godot_Project/addons/godot-jolt/macos",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					_DEBUG,
+					JPH_PROFILE_ENABLED,
+					JPH_DEBUG_RENDERER,
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Styx/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Styx;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.Styx;
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.jigsaw.styx-godot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 7;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
 		};
-		5239B3C72C888E7A0052A684 /* Release */ = {
+		DE54EAC32B3C75D600594A05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Styx/Styx.entitlements;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Styx/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Godot_Project/addons/godot-jolt/visionos",
+					"$(PROJECT_DIR)/Godot_Project/addons/godot-jolt/macos",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Styx/Info.plist;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "$(TARGET_NAME)/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Styx;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.Styx;
+				PRODUCT_BUNDLE_IDENTIFIER = "studio.jigsaw.styx-godot";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "xros xrsimulator";
-				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_INTEROP_MODE = objcxx;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 7;
-			};
-			name = Release;
-		};
-		5239B3C92C888E7A0052A684 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Styx.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Styx";
-			};
-			name = Debug;
-		};
-		5239B3CA2C888E7A0052A684 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Styx.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Styx";
-			};
-			name = Release;
-		};
-		5239B3CC2C888E7A0052A684 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Styx;
-			};
-			name = Debug;
-		};
-		5239B3CD2C888E7A0052A684 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
-				MACOSX_DEPLOYMENT_TARGET = 14.5;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = studio.jigsaw.styx.StyxUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Styx;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5239B39B2C888E790052A684 /* Build configuration list for PBXProject "Styx" */ = {
+		DE54EAA72B3C75D500594A05 /* Build configuration list for PBXProject "Styx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5239B3C32C888E7A0052A684 /* Debug */,
-				5239B3C42C888E7A0052A684 /* Release */,
+				DE54EABF2B3C75D600594A05 /* Debug */,
+				DE54EAC02B3C75D600594A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5239B3C52C888E7A0052A684 /* Build configuration list for PBXNativeTarget "Styx" */ = {
+		DE54EAC12B3C75D600594A05 /* Build configuration list for PBXNativeTarget "Styx" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5239B3C62C888E7A0052A684 /* Debug */,
-				5239B3C72C888E7A0052A684 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5239B3C82C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5239B3C92C888E7A0052A684 /* Debug */,
-				5239B3CA2C888E7A0052A684 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5239B3CB2C888E7A0052A684 /* Build configuration list for PBXNativeTarget "StyxUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5239B3CC2C888E7A0052A684 /* Debug */,
-				5239B3CD2C888E7A0052A684 /* Release */,
+				DE54EAC22B3C75D600594A05 /* Debug */,
+				DE54EAC32B3C75D600594A05 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		520A8DC02C88932500BD52AE /* XCRemoteSwiftPackageReference "GodotVision" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kevinw/GodotVision";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		52C68FCC2D1F4B690056A16A /* XCLocalSwiftPackageReference "Dependencies/SwiftGodot" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Dependencies/SwiftGodot;
 		};
-/* End XCRemoteSwiftPackageReference section */
+		52C68FCD2D1F4B850056A16A /* XCLocalSwiftPackageReference "Dependencies/SwiftGodotKit" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Dependencies/SwiftGodotKit;
+		};
+		52C68FD02D1F4B970056A16A /* XCLocalSwiftPackageReference "Dependencies/GodotVision" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Dependencies/GodotVision;
+		};
+		DE5677452B702126002BABB4 /* XCLocalSwiftPackageReference "../GodotVision" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../GodotVision;
+		};
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		520A8DC12C88932500BD52AE /* GodotVision */ = {
+		5249F06C2D1DDA720011D136 /* GodotVision */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 520A8DC02C88932500BD52AE /* XCRemoteSwiftPackageReference "GodotVision" */;
+			productName = GodotVision;
+		};
+		52C68FCE2D1F4B850056A16A /* SwiftGodotKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SwiftGodotKit;
+		};
+		52C68FD12D1F4B970056A16A /* GodotVision */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = GodotVision;
+		};
+		DE5677482B702579002BABB4 /* GodotVision */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE5677452B702126002BABB4 /* XCLocalSwiftPackageReference "../GodotVision" */;
 			productName = GodotVision;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 5239B3982C888E790052A684 /* Project object */;
+	rootObject = DE54EAA42B3C75D500594A05 /* Project object */;
 }

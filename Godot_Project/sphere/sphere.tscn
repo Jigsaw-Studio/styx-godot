@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy6nxqv5ntssf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ncwmx"]
+albedo_color = Color(1, 0, 0, 1)
+
+[node name="SphereNode3D" type="Node3D"]
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.7, 0)
+radius = 1.0
+radial_segments = 100
+rings = 64
+material = SubResource("StandardMaterial3D_ncwmx")

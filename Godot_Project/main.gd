@@ -29,7 +29,7 @@ func _ready():
         xr_interface = XRServer.find_interface("WebXR")
         if xr_interface:
             print("WebXR initialized")
-            
+
             $WebCanvasLayer/WebButton.pressed.connect(self._on_button_pressed)
             # WebXR uses a lot of asynchronous callbacks, so we connect to various
             # signals in order to receive them.
@@ -37,7 +37,7 @@ func _ready():
             xr_interface.session_started.connect(self._webxr_session_started)
             xr_interface.session_ended.connect(self._webxr_session_ended)
             xr_interface.session_failed.connect(self._webxr_session_failed)
-    
+
             # This returns immediately - our _webxr_session_supported() method
             # (which we connected to the "session_supported" signal above) will
             # be called sometime later to let us know if it's supported or not.
@@ -77,8 +77,9 @@ func _webxr_session_supported(session_mode: String, supported: bool) -> void:
             OS.alert("Your browser doesn't support AR")
  
 func _on_button_pressed() -> void:
-    # Whether we want an immersive VR session, as opposed to AR ('immersive-ar') or a
-    # simple 3DoF viewer ('viewer').
+    # Whether we want an immersive VR session ('immersive-vr'),
+    # as opposed to AR ('immersive-ar'),
+    # or a simple 3DoF viewer ('viewer').
     #xr_interface.session_mode = 'immersive-vr'
     xr_interface.session_mode = 'immersive-ar'
     # 'bounded-floor' is room scale, 'local-floor' is a standing or sitting
@@ -88,11 +89,19 @@ func _on_button_pressed() -> void:
     # fallback on 'local-floor' and ultimately 'local', if nothing else is
     # supported.
     xr_interface.requested_reference_space_types = 'bounded-floor, local-floor, local'
-    ## In order to use 'local-floor' or 'bounded-floor' we must also
-    ## mark the features as required or optional.
+    # In order to use 'local-floor' or 'bounded-floor' we must also
+    # mark the features as required or optional.
     xr_interface.required_features = 'local-floor'
     xr_interface.optional_features = 'bounded-floor'
  
+    # Position of XROrigin3D is getting reset and the perspective
+    # falls through the floor so we manually place it back above at 1.6m
+    var xr_origin = get_node_or_null("XROrigin3D")
+    if xr_origin and xr_origin is Node3D:
+        var xform = xr_origin.global_transform
+        xform.origin.y = 1.6
+        xr_origin.global_transform = xform
+
     # This will return false if we're unable to even request the session,
     # however, it can still fail asynchronously later in the process, so we
     # only know if it's really succeeded or failed when our

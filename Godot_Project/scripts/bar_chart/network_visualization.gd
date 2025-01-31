@@ -62,7 +62,7 @@ func visualize_data_remote(entry: Dictionary, traffic_data: Dictionary) -> void:
         var height_ratio: float = float(total_traffic) / float(max_traffic)
 
         # Load the column script
-        var column_script = load("res://common/column.gd")
+        var column_script = load("res://scripts/common/column.gd")
         if column_script == null:
             print("Error: Script not loaded properly.")
             return

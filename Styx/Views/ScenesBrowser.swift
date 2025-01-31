@@ -11,11 +11,11 @@ typealias Environment = SwiftUI.Environment
 fileprivate let pathToGodotProject = "Godot_Project"
 
 fileprivate let visualizationScenes: [(label: String, systemImageName: String, resourcePath: String)] = [
-    ("Bar Chart", "chart.bar.fill", "res://bar_chart/bar_chart.tscn"),
-    ("Sphere",    "circle.fill",    "res://sphere/sphere.tscn"),
-    ("Cube",      "cube.fill",      "res://cube/cube.tscn"),
-    ("Cone",      "cone.fill",      "res://cone/cone.tscn"),
-    ("Torus",     "torus",          "res://torus/torus.tscn"),
+    ("Bar Chart", "chart.bar.fill", "res://scenes/bar_chart/bar_chart.tscn"),
+    ("Sphere",    "circle.fill",    "res://scenes/sphere/sphere.tscn"),
+    ("Cube",      "cube.fill",      "res://scenes/cube/cube.tscn"),
+    ("Cone",      "cone.fill",      "res://scenes/cone/cone.tscn"),
+    ("Torus",     "torus",          "res://scenes/torus/torus.tscn"),
 ]
 
 struct ScenesBrowser: View {

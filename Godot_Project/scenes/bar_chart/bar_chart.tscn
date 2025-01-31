@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://35vchcf8slhs"]
 
-[ext_resource type="Script" path="res://bar_chart/styx_remote.gd" id="1_qovgh"]
-[ext_resource type="Script" path="res://bar_chart/styx_raw.gd" id="2_0038m"]
+[ext_resource type="Script" path="res://scripts/bar_chart/styx_remote.gd" id="1_qovgh"]
+[ext_resource type="Script" path="res://scripts/bar_chart/styx_raw.gd" id="2_0038m"]
 
 [node name="BarChart" type="Node3D"]
 

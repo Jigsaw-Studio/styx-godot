@@ -5,7 +5,7 @@ class_name StyxApi
 var is_running_in_web : bool = OS.get_name() == "Web" or OS.get_name() == "HTML5"
 
 # Load the network visualization script
-var network_visualization = preload("res://bar_chart/network_visualization.gd")
+var network_visualization = preload("res://scripts/bar_chart/network_visualization.gd")
 var nv = null
 
 # Network client setup (UDP for native clients, TCP HTTPRequest for WebXR web export)

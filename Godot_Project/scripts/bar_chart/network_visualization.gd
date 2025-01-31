@@ -79,7 +79,8 @@ func visualize_data_remote(entry: Dictionary, traffic_data: Dictionary) -> void:
 
         # Set the position of the column in the scene
         #column.transform.origin = Vector3(index * 0.2, (height_ratio * 5) - 2, 7)
-        column.transform.origin = Vector3(index * 0.2, (height_ratio * 2.5) - 2, 6)
+        #column.transform.origin = Vector3(index * 0.2, (height_ratio * 2.5) - 2, 6)
+        column.transform.origin = Vector3(index * 0.2, (height_ratio * 2.5), 6)
 
         # Adjust position by custom parameters
         column.translate(Vector3(entry["transform"][0], entry["transform"][1], entry["transform"][2]))

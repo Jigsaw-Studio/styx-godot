@@ -111,7 +111,7 @@ struct ScenesBrowser: View {
     }
     
     private func uiPanelPosition(volumeSize: simd_double3) -> simd_float3 {
-        .init(0, Float(volumeSize.y / -2 + 0.1), Float(volumeSize.z / 2 - 0.01))
+        .init(0, Float(volumeSize.y / 2 - 0.1), Float(volumeSize.z / 2 - 0.01)) // Top
     }
 }
 

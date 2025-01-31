@@ -46,6 +46,7 @@ struct StyxApp: App {
                 .onAppear {
                     print("MAIN appear")
                     godotVision.setupRealityKitScene(rootEntityMain, volumeSize: VOLUME_SIZE)
+                    rootEntityMain.position.y -= Float(VOLUME_SIZE.y / 2)  // Offset to match Godot floor
                 }
         }
         .windowStyle(.volumetric)
@@ -59,6 +60,7 @@ struct StyxApp: App {
                 .onAppear {
                     print("IMMERSIVE appear")
                     godotVision.setupRealityKitScene(rootEntityImmersive, volumeSize: VOLUME_SIZE)
+                    rootEntityMain.position.y -= Float(VOLUME_SIZE.y / 2)  // Offset to match Godot floor
                 }
                 .onDisappear {
                     print("IMMERSIVE disappear, opening 'main' window")

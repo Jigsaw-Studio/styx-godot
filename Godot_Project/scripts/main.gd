@@ -105,10 +105,10 @@ func _on_button_pressed() -> void:
  
     # Position of XROrigin3D is getting reset and the perspective
     # falls through the floor so we manually place it back above at 1.6m
-    var xr_origin = get_node_or_null("XROrigin3D")
+    var xr_origin = get_node_or_null("objects/XROrigin3D")
     if xr_origin and xr_origin is Node3D:
         var xform = xr_origin.global_transform
-        xform.origin.y = 6
+        xform.origin.y = 1.6
         xr_origin.global_transform = xform
 
     # This will return false if we're unable to even request the session,
@@ -119,7 +119,7 @@ func _on_button_pressed() -> void:
         if interface_alerts:
             OS.alert("Failed to initialize WebXR")
         return
- 
+
 func _webxr_session_started() -> void:
     $ui/WebCanvasLayer.visible = false
     # This tells Godot to start rendering to the headset.

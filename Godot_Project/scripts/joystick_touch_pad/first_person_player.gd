@@ -6,43 +6,75 @@ extends CharacterBody3D
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
+const LOOK_SENS = 2.0
+const CAMERA_LOOK_SPEED = 0.02  # Adjust sensitivity for input actions
 
-const LOOKS_SENS = 2.0
-
-# Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
-
-var movement_input_vector = Vector2.ZERO
 
 var jump_just_pressed = false
 
 func look(look_vector):
-    
-    look_vector = look_vector/get_viewport().content_scale_size.y
-    look_vector = look_vector*LOOKS_SENS
-    
+    look_vector = look_vector / get_viewport().content_scale_size.y
+    look_vector = look_vector * LOOK_SENS
     rotate_y(look_vector.x)
     head.rotate_x(look_vector.y)
-    head.rotation.x = clamp(head.rotation.x,deg_to_rad(-89),deg_to_rad(89))
+    head.rotation.x = clamp(head.rotation.x, deg_to_rad(-89), deg_to_rad(89))
 
 func _physics_process(delta):
     
+    # Check if character has fallen through the floor
+    if global_transform.origin.y < 0:
+        print("Character fell through the floor! Resetting position.")
+        global_transform.origin.y = 0
+        velocity = Vector3.ZERO  # Reset velocity to prevent falling again
+    
+    # Handle looking around with joystick
     look(-joystick_touch_pad.get_touchpad_delta())
     
-    # Add the gravity.
-    if not is_on_floor():
-        velocity.y -= gravity * delta
+    # Handle camera control with Input Map actions
+    var camera_look = Vector2.ZERO
+    if Input.is_action_pressed("camera_left"):
+        camera_look.x -= CAMERA_LOOK_SPEED
+    if Input.is_action_pressed("camera_right"):
+        camera_look.x += CAMERA_LOOK_SPEED
+    if Input.is_action_pressed("camera_up"):
+        camera_look.y -= CAMERA_LOOK_SPEED
+    if Input.is_action_pressed("camera_down"):
+        camera_look.y += CAMERA_LOOK_SPEED
+    
+    look(camera_look)
 
-    # Handle jump.
-    if jump_just_pressed and is_on_floor():
+    # Apply gravity if not on the floor
+    if not on_floor():
+        velocity.y -= gravity * delta
+    
+    # Jump input
+    if (Input.is_action_pressed("jump") or jump_just_pressed) and on_floor():
         jump_just_pressed = false
         velocity.y = JUMP_VELOCITY
 
-    # Get the input direction and handle the movement/deceleration.
-    # As good practice, you should replace UI actions with custom gameplay actions.
+    # 1) Start with the on-screen joystick input
     var input_dir = joystick_touch_pad.get_joystick()
+
+    # 2) Add on top of that the Input Map actions:
+    if Input.is_action_pressed("move_forward"):
+        input_dir.y -= 1
+    if Input.is_action_pressed("move_back"):
+        input_dir.y += 1
+    if Input.is_action_pressed("move_left"):
+        input_dir.x -= 1
+    if Input.is_action_pressed("move_right"):
+        input_dir.x += 1
+
+    # Normalize to avoid diagonal overspeeding
+    if input_dir.length() > 1:
+        input_dir = input_dir.normalized()
+
+    # Convert to 3D direction
     var direction = (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-    if direction:
+
+    # Movement
+    if direction != Vector3.ZERO:
         velocity.x = direction.x * SPEED
         velocity.z = direction.z * SPEED
     else:
@@ -51,6 +83,9 @@ func _physics_process(delta):
 
     move_and_slide()
 
-
+func on_floor() -> bool:
+    # is_on_floor() not returning correct value
+    return global_transform.origin.y == get_floor_normal().y
+    
 func on_jump_button_pressed():
     jump_just_pressed = true

@@ -4,6 +4,7 @@ var xr_interface : XRInterface
 var passthrough_enabled : bool = false
 var is_running_in_web : bool = OS.get_name() == "Web" or OS.get_name() == "HTML5"
 var joystick_touch_pad_enabled : bool = false
+var interface_alerts : bool = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -75,12 +76,14 @@ func _webxr_session_supported(session_mode: String, supported: bool) -> void:
         if supported:
             $ui/WebCanvasLayer.visible = true
         else:
-            OS.alert("Your browser doesn't support VR")
+            if interface_alerts:
+                OS.alert("Your browser doesn't support VR")
     elif session_mode == 'immersive-ar':
         if supported:
             $ui/WebCanvasLayer.visible = true
         else:
-            OS.alert("Your browser doesn't support AR")
+            if interface_alerts:
+                OS.alert("Your browser doesn't support AR")
  
 func _on_button_pressed() -> void:
     # Whether we want an immersive VR session ('immersive-vr'),
@@ -113,7 +116,8 @@ func _on_button_pressed() -> void:
     # only know if it's really succeeded or failed when our
     # _webxr_session_started() or _webxr_session_failed() methods are called.
     if not xr_interface.initialize():
-        OS.alert("Failed to initialize WebXR")
+        if interface_alerts:
+            OS.alert("Failed to initialize WebXR")
         return
  
 func _webxr_session_started() -> void:
@@ -135,7 +139,8 @@ func _webxr_session_ended() -> void:
     get_viewport().use_xr = false
  
 func _webxr_session_failed(message: String) -> void:
-    OS.alert("Failed to initialize: " + message)
+    if interface_alerts:
+        OS.alert("Failed to initialize: " + message)
 
 func update_joystick_touch_pad(enable : bool) -> void:
     if not enable:

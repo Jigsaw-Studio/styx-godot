@@ -10,6 +10,10 @@ In Greek mythology the River Styx was the boundary between the world of the livi
 
 The Styx project provides a boundary between your devices and the Underworld of the Internet
 
+<div style="text-align:center;">
+  <img src="docs/images/styx-matrix-1080p.jpg" alt="Matrix Visualization" width="640"/>
+</div>
+
 ## Features
 - Augmented Reality live pass-through support
 - Virtual Reality native support for Meta Quest, SteamVR, and OpenXR headsets

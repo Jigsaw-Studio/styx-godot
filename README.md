@@ -12,6 +12,9 @@ The Styx project provides a boundary between your devices and the Underworld of 
 
 <div style="text-align:center;">
   <img src="docs/images/styx-matrix-1080p.jpg" alt="Matrix Visualization" width="640"/>
+  <p style="font-size: 0.8em; color: gray; margin-top: 5px;">
+    "Matrix" style visualizer for recent network activity by domain
+  </p>
 </div>
 
 ## Features
